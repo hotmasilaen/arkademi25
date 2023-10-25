@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belahar HTML bersama Arkademi - D1</title>
+    <style>
+        p {
+            background-color: yellow;
+            width: fit-content;
+        }
+
+        table,
+        tr,
+        thead,
+        tbody,
+        th,
+        td {
+            border: 1px solid gray;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let nama = document.forms['myForm']['fname'].value
+            if (nama == '') {
+                alert('Nama tidak boleh kosong');
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <h1>
+        Kursus Online dari<br />
+        Lembaga Pelatihan Resmi untuk<br />
+        Tingkatkan Karier Profesionalmu
+    </h1> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>No HP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Riska</td>
+                <td>Medan</td>
+                <td>085432632</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>085432632</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>085432632</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <form name="myForm" onsubmit="return validateForm()">
+        Nama: <input type="text" name="fname" />
+        <input value="Submit" type="submit" />
+    </form>
+    <br />
+    <p>Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset,
+        dan Teknologi RI</p>
+    <mark>
+        Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset,
+        dan Teknologi RI
+    </mark>
+    <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-new-hero-comp.f8b58ff9.webp&w=750&q=75"
+        alt="gambar-mentor" />
+    <br />
+    <a href="https://prakerja.arkademi.com/">Prakerja</a>
+    <!-- <p>
+        <b>
+            Bermitra dengan lembaga pemerintah sebagai penyedia layanan pelatihan kartu prakerja untuk menciptakan
+            angkatan kerja Indonesia yang siap kerja.
+        </b>
+    </p> -->
+    <h1>
+        Kursus Online dari<br />
+        Lembaga Pelatihan Resmi untuk<br />
+        Tingkatkan Karier Profesionalmu
+    </h1>
+</body>
+
+</html>

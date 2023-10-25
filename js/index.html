@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript bersama Arkademi</title>
+</head>
+
+<body>
+    <p id="root"></p>
+    <script>
+        // const nama = "Nia";
+        // const Nama = "Farhan";
+        // const NaMa = "Farhan";
+
+        const nilai = 80;
+        let alamat = "medan";
+        alamat = "jakarta";
+
+        console.log('Alamat: ', alamat);
+        // alert('Alamat: ' + alamat);
+        document.getElementById('root').innerHTML = 'ALamat: ' + alamat;
+
+        const hargaBaju = 200000;
+        const pajak = '20000';
+        console.log('Yang kita bayar: ', hargaBaju + pajak);
+
+        // const namaBarang = '';
+        // namaBarang.map(() => console.log('testttt'))
+
+        const hargaSepatu = 2937500;
+        const diskos = 0.3 * hargaSepatu
+        console.log('Yang harus kamu bayar: ', hargaSepatu - diskos);
+
+        const currentPswd = 'admin1234';
+        const incommingPswd = 'admin123';
+        // console.log('Apakah password match? ', currentPswd == incommingPswd);
+        console.log('Apakah password not match? ', currentPswd != incommingPswd);
+
+        const number = 23;
+        const number2 = '23';
+        console.log('apakah nilai variable identical? ', number === number2);
+        console.log('apakah nilai variable not identical? ', number !== number2);
+
+        const noHp = "082154xxxxxx";
+        console.log(noHp.slice(1, 11));
+        console.log(noHp.replace('0', '+62'))
+
+        const umur = 15;
+
+        if (umur >= 17) {
+            console.log('umur sudah 17 tahun atau sudah 17 tahun keatas');
+        } else {
+            console.log('umur masih dibawah 17 tahun');
+        }
+
+        if (umur > 40) {
+            console.log('umur sudah diatas 40 tahun');
+        } else if (umur >= 17) {
+            console.log('umur sudah 17 tahun atau sudah 17 tahun keatas');
+        }
+
+        switch (umur) {
+            case 15:
+                console.log('Kamu masih remaja');
+                break;
+            case 17:
+                console.log('umur sudah 17 tahun');
+            case 22:
+                console.log('umur sudah 22 tahun');
+            case 27:
+                console.log('umur sudah 22 tahun');
+            default:
+                console.log('kamu sudah lansia');
+                break;
+        }
+
+        for (var i = 1; i <= 5; i++) {
+            console.log('Number: ', i);
+        }
+
+        const namaSiswa = ['Nia', 'fadli', 'Nadia'];
+        for (var i in namaSiswa) {
+            console.log('Nama siswa: ', namaSiswa[i]);
+        }
+
+
+        function penjumlahan(x, y) {
+            let s = x + y;
+            return s;
+        }
+
+        console.log(penjumlahan(7500, 63400));
+        console.log(penjumlahan(24500, 32100));
+    </script>
+</body>
+
+</html>
